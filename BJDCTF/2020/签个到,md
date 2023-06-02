@@ -1,6 +1,6 @@
 # [BJDCTF 2022]签个到
 
-## 在线题目来源
+## 题目来源
 
 [[BJDCTF 2020]签个到?](https://www.nssctf.cn/problem/693)
 
@@ -11,7 +11,7 @@
 拉出来扔到010editor里,发现开头png,说明可能是张png图片  
 修改文件名得到一张二维码,扔到一个扫描网站里即可得到flag  
 
-flag `xaflag{i_am_a_tupian}`
+flag `xaflag{i_am_a_tupian}`  
 
 ~~什么鬼英文命名~~
 

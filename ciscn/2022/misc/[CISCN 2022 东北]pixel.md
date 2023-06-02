@@ -1,6 +1,6 @@
 # [CISCN 2022 东北]pixel
 
-## 在线题目来源
+## 题目来源
 
 [[CISCN 2022 东北]pixel](https://www.nssctf.cn/problem/2399)
 
