@@ -16,13 +16,15 @@
 不知道能不能爆破这种套文件夹的,ARCHPR是没成    
 打开`pass.txt`,根据提示把棋谱中的数字当做密码对压缩包解压,出来个`flag.dat`  
 没有打开方式,扔到010editor里看一看感觉什么都不是  
-请出B神的[PuzzleSolver](https://www.bilibili.com/video/BV1Zs4y1P7Yd),用file-format得到  
+请出B神的[PuzzleSolver](https://www.bilibili.com/video/BV1Zs4y1P7Yd),用file-format得到
+~~2023/10/26 puzzlesolver已经无了呜呜呜呜,大概知道思路就好了~~  
 `类型: ZIP/APK/DOCX/XLSX/PPTX, 异或文件头: 50 4B 03 04, 异或: 0x9e, 文件头相似度: 1.0`
 也就是个zip,在010editor里tools->hex operations->binary xor->选择unsigned byte,填入9e,hex即可   
 改成zip,发现需要解压密码,回到刚刚异或后的结果里,发现最底下有一串01二进制  
 接着使用PuzzleSolver,解密出来`You_Cannot_find_it`,总之扔进去试试能不能解密  
 进去之后是flag.png,继续使用密码解密  
 打开图片什么都没有,[按照B神博客上的说法](https://byxs20.github.io/posts/1154.html#10-PixelJihad-10),扔到010editor中可以看到相同的特征(即IDAT都是200ch)  
+~~b神的博客也无了以后一定要多备份~~  
 (一般第一次用010打开png会自动下载对应的脚本,没有去官网找下好了)  
 同样的,扔到Stegslove里也能在b0和g0看到隐写特征(有黑点应该算是?)
 按照旨意前往[pixeljihad](https://sekao.net/pixeljihad/)把图片扔进去,password就接着用之前得到的`You_Cannot_find_it`,得到flag  
